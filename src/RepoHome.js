@@ -1,8 +1,16 @@
 import React from 'react';
+import GitCard from './GitCard';
 
 function RepoHome(){
     return(
-        null
+       <>
+        <GitCard/>
+        <GitCard/>
+        <GitCard/>
+        <GitCard/>
+        <GitCard/>
+        <GitCard/>
+       </>
     );
 }
 

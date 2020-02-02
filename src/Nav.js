@@ -2,7 +2,7 @@ import React from 'react';
 
 function Nav(){
     return(
-        <nav className="navbar is-dark" 
+        <nav className="navbar is-dark is-fixed-top" 
              role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
                 <a href="#" className="navbar-item">
