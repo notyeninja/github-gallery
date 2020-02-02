@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       <Nav/>
-      <div className="container">
-      <RepoHome/>
+      <div className="container" style={{ marginTop:16 }}>
+        <RepoHome/>
       </div>
     </>
   );

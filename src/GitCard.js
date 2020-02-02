@@ -2,7 +2,7 @@ import React from 'react';
 
 function GitCard() {
   return (
-    <div className="box has-background-light">
+    <div className="box has-background-light" style={{ marginTop:20}}>
       <article className="media">
         <figure className="media-left">
           <p className="image is-96x96">
@@ -38,10 +38,13 @@ function GitCard() {
             </div>
             <div className="level-right">
               <div className="level-item">
-                <button className="button is-primary is-outlined">
+                <a href="https://github.com/angular/angular" 
+                   rel="external"
+                   target="_blank"
+                   className="button is-primary is-outlined">
                   <span className="icon"><i className="fab fa-github"></i></span>
                   <span>Check Them Out!</span>
-                 </button>
+                 </a>
               </div>
               <div className="level-item">
                 <button className="button is-primary is-outlined">
