@@ -1,25 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import 'bulma/css/bulma.min.css';
+import '@fortawesome/fontawesome-free';
+import Nav from './Nav';
+import Footer from './Footer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Nav />
+      <section class="hero">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title is-uppercase">
+             Peek
+            </h1>
+            <h2 class="subtitle">
+               A Simple GitHub Viewer
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="container">
+          <p>
+            This is a sample project to showcase basic
+            React capabilities. I hope this is helpful to anyone who is learning React.
+            The source code can be found here.
+          </p>
+          <button className="button is-warning is-medium is-bold">Let's Go!</button>
+        </div>
+      </section>
+    
+    </>
   );
 }
 
