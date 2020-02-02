@@ -1,12 +1,15 @@
 import React from 'react';
 import 'bulma/css/bulma.min.css';
-import '@fortawesome/fontawesome-free';
-import Home from './Home';
+import '@fortawesome/fontawesome-free/js/all';
+import GitCard from './GitCard';
 
 
 function App() {
   return (
-    <Home/>
+    <div className="container">
+      <GitCard/>
+    </div>
+    
   );
 }
 
