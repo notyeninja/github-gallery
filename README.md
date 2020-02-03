@@ -1,3 +1,26 @@
+# Introduction
+
+I'm sure I'm not the only developer who thinks that the best way to learn is by doing. So, here I'm learning to React. :smile:
+
+<img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" width="200">
+
+It's a web application which demonstrates Git API integration.
+
+My hope is that it will help other developers like myself if they stumpled upon this repo by any chance. :smirk:
+
+The code is commented heavely and I tried to keep the naming convention such that it is easy to understand and locate the components at a glance. Current solution demonstrates following concepts of Rect. The following list will grow as the project matures and I add more functionality.
+
+  * Component composition
+  * Pure function components
+  * Raising events in child components
+  * Using state
+  * Routing
+
+This is also hosted on [codesandbox.io](https://codesandbox.io/), [click here]() to check it out.
+
+
+
+# Details About Create React App CLI
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
