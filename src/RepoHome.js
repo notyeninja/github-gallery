@@ -43,7 +43,7 @@ function RepoHome() {
 
     return (
         <>
-                <form>
+                <form onSubmit={(e) => searchRepository(e)}>
                     <div className="field has-addons">
                         <div className="control is-expanded">
                             <input className="input" 
