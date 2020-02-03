@@ -3,6 +3,9 @@ import RepoInfoCard from './RepoInfoCard';
 import repoService from './GithubRepoService';
 import Search from './Search';
 
+/**
+ * Component for searching and displaying repositories.
+ */
 function RepoHome() {
     const [repoList, setRepoList] = useState([]);
 

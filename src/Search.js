@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-
+/**
+ * A generic search component.
+ */
 function Search({ onSearchClick }){
     const [searchTerm, setSearchTerm] = useState("");
 

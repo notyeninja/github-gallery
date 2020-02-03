@@ -1,5 +1,10 @@
 import axios from 'axios';
-
+/**
+ *  A abstraction over axios.
+ *  This way we can add auth tokens and keep the code in one place.
+ * TODO: Integrate the config constant so that we can extract out the 
+ * API urls.
+ */
 function GitHubRepoService(){
 
     const baseUrl = 'https://api.github.com/search/repositories'

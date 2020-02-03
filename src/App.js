@@ -6,7 +6,9 @@ import RepoHome from './RepoHome';
 import Home from './Home';
 import { Router } from '@reach/router';
 
-
+/**
+ * React learning app. Integrating Github APIs
+ */
 function App() {
   return (
     <>

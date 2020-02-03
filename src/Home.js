@@ -2,20 +2,22 @@ import React from 'react';
 import Nav from './Nav';
 import { navigate } from '@reach/router'
 
-
+/**
+ * Landing page of the application
+ */
 function Home() {
 
     function gotoRepoSearch() {
         navigate('/search-repo');
     }
     return (
-        <section class="hero is-warning is-fullheight-with-navbar">
-            <div class="hero-body">
-                <div class="container has-text-centered">
-                    <h1 class="title is-uppercase">
+        <section className="hero is-warning is-fullheight-with-navbar">
+            <div className="hero-body">
+                <div className="container has-text-centered">
+                    <h1 className="title is-uppercase">
                         Peek
                     </h1>
-                    <h2 class="subtitle">
+                    <h2 className="subtitle">
                         A Simple GitHub Viewer
                 </h2>
                     <p>
