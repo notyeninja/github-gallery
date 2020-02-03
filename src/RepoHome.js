@@ -40,18 +40,18 @@ function RepoHome() {
     }
 
     return (
-        <>
+        <div style={{marginTop:40}} className="container">
                <Search onSearchClick={searchRepository}/>
                {
                    repoList.length === 0? (
-                       <h1 className="title is-text-danger">No Repositories Found.</h1>
+                       <h6 className="is-size-6 has-text-grey">No Repositories Found.</h6>
                    ):(
                        repoList.map((item) => (
                            <RepoInfoCard changeLikes={updateLikes} item={ item } key={item.id}/>
                        ))
                    )
                }
-        </>
+        </div>
     );
 }
 

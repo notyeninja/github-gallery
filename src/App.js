@@ -11,12 +11,10 @@ function App() {
   return (
     <>
       <Nav/>
-      <div className="container" style={{ marginTop:16 }}>
         <Router>
           <Home path="/"/>
           <RepoHome path="search-repo"/>
         </Router>
-      </div>
     </>
   );
 }

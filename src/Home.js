@@ -5,36 +5,32 @@ import { navigate } from '@reach/router'
 
 function Home() {
 
-    function gotoRepoSearch(){
+    function gotoRepoSearch() {
         navigate('/search-repo');
     }
-    return(
-        <>
-            <Nav />
-            <section>
-                <section class="hero">
-                    <div class="hero-body">
-                        <div class="container">
-                            <h1 class="title is-uppercase">
-                                Peek
-                            </h1>
-                            <h2 class="subtitle">
-                                A Simple GitHub Viewer
-                            </h2>
-                        </div>
-                    </div>
-                </section>
-                <div className="container">
+    return (
+        <section class="hero is-warning is-fullheight-with-navbar">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title is-uppercase">
+                        Peek
+                    </h1>
+                    <h2 class="subtitle">
+                        A Simple GitHub Viewer
+                </h2>
                     <p>
                         This is a sample project to showcase basic
-                        React capabilities. I hope this is helpful to anyone who is learning React.
-                        The source code can be found here.
+                        React capabilities. The source code can be found on &nbsp;
+                        <a href="https://github.com/notyeninja/github-gallery"
+                           rel="external"
+                           target="_blank">GitHub</a>
                     </p>
-                    <button onClick={gotoRepoSearch} className="button is-warning is-medium is-bold">Let's Go!</button>
+                    <button onClick={gotoRepoSearch} 
+                            className="button is-link is-outlined is-medium is-bold"
+                            style={{ marginTop:16}}>Let's Go!</button>
                 </div>
-            </section>
-
-        </>
+            </div>
+        </section>
     );
 }
 

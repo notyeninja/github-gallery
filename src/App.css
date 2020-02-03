@@ -1,0 +1,23 @@
+.transition-group {
+    flex: 1;
+    position: relative;
+  }
+
+  .router {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .fade-enter .page {
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  .fade-enter.fade-enter-active .page {
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+  }
+  
