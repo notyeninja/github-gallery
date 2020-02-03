@@ -16,7 +16,7 @@ The code is commented heavely and I tried to keep the naming convention such tha
   * Using state
   * Routing
 
-This is also hosted on [codesandbox.io](https://codesandbox.io/), [click here](https://yins6.csb.app/search-repo) to check it out.
+This is also hosted on [codesandbox.io](https://codesandbox.io/), [click here](https://yins6.csb.app) to check it out.
 
 
 
