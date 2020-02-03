@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import GitCard from './GitCard';
+import RepoInfoCard from './RepoInfoCard';
 import repoService from './GithubRepoService';
 
 function RepoHome() {
@@ -37,7 +37,7 @@ function RepoHome() {
                        <h1 className="title is-text-danger">No Repositories Found.</h1>
                    ):(
                        repoList.map((item) => (
-                           <GitCard item={ item } key={item.id}/>
+                           <RepoInfoCard item={ item } key={item.id}/>
                        ))
                    )
                }

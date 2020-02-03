@@ -1,6 +1,7 @@
 import React from 'react';
+import RepositoryStatistics from './RepositoryStatistics';
 
-function GitCard({ item }) {
+function RepoInfoCard({ item }) {
   return (
     <div className="box has-background-light" style={{ marginTop:20}}>
       <article className="media">
@@ -17,24 +18,9 @@ function GitCard({ item }) {
           </div>
           <nav className="level is-mobile">
             <div className="level-left">
-              <div className="level-item has-text-centered">
-                <div>
-                  <p className="heading">Size</p>
-                  <p className="subtitle">{item.repoSize}</p>
-                </div>
-              </div>
-              <div className="level-item has-text-centered">
-                <div>
-                  <p className="heading">Forks</p>
-                  <p className="subtitle">{item.forks}</p>
-                </div>
-              </div>
-              <div className="level-item has-text-centered">
-                <div>
-                  <p className="heading">Score</p>
-                  <p className="subtitle">{item.score}</p>
-                </div>
-              </div>
+            <RepositoryStatistics label="Size" value={item.repoSize}/>
+            <RepositoryStatistics label="Forks" value={item.forks}/>
+            <RepositoryStatistics label="Score" value={item.score}/>
             </div>
             <div className="level-right">
               <div className="level-item">
@@ -63,4 +49,4 @@ function GitCard({ item }) {
     </div>
   );
 }
-export default GitCard;
+export default RepoInfoCard;
