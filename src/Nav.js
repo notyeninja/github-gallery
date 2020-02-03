@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo_1.png';
+import { Link } from '@reach/router';
 
 function Nav(){
     return(
@@ -20,7 +21,8 @@ function Nav(){
 
             <div id="mainNavBar" className="navbar-menu">
                 <div className="navbar-start">
-                    <a  className="navbar-item">Home</a>
+                    <Link to="/"  className="navbar-item">Home</Link>
+                    <Link to="search-repo"  className="navbar-item">Repo Search</Link>
                 </div>
             </div>
         </nav>

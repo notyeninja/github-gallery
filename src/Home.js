@@ -1,8 +1,13 @@
 import React from 'react';
 import Nav from './Nav';
+import { navigate } from '@reach/router'
 
 
 function Home() {
+
+    function gotoRepoSearch(){
+        navigate('/search-repo');
+    }
     return(
         <>
             <Nav />
@@ -25,7 +30,7 @@ function Home() {
                         React capabilities. I hope this is helpful to anyone who is learning React.
                         The source code can be found here.
                     </p>
-                    <button className="button is-warning is-medium is-bold">Let's Go!</button>
+                    <button onClick={gotoRepoSearch} className="button is-warning is-medium is-bold">Let's Go!</button>
                 </div>
             </section>
 

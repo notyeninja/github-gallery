@@ -3,6 +3,8 @@ import 'bulma/css/bulma.min.css';
 import '@fortawesome/fontawesome-free/js/all';
 import Nav from './Nav';
 import RepoHome from './RepoHome';
+import Home from './Home';
+import { Router } from '@reach/router';
 
 
 function App() {
@@ -10,7 +12,10 @@ function App() {
     <>
       <Nav/>
       <div className="container" style={{ marginTop:16 }}>
-        <RepoHome/>
+        <Router>
+          <Home path="/"/>
+          <RepoHome path="search-repo"/>
+        </Router>
       </div>
     </>
   );
