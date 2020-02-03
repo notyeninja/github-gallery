@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from './logo_1.png';
 
 function Nav(){
     return(
@@ -6,7 +7,7 @@ function Nav(){
              role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
                 <a href="#" className="navbar-item">
-                    <img src={ process.env.PUBLIC_URL + 'logo_1.png'} alt="Logo"/>
+                    <img src={logo} alt="Logo"/>
                 </a>
 
                 <a role="button" className="navbar-burger burger" aria-label="menu" 
