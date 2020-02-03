@@ -1,18 +1,18 @@
 import React from 'react';
 
-function GitCard() {
+function GitCard({ item }) {
   return (
     <div className="box has-background-light" style={{ marginTop:20}}>
       <article className="media">
         <figure className="media-left">
           <p className="image is-96x96">
-            <img src="https://avatars3.githubusercontent.com/u/139426?v=4" />
+            <img src={item.avatar} />
           </p>
         </figure>
         <div className="media-content">
           <div className="content">
-            <h1 className="title is-3">angular</h1>
-            <h6 className="subtitle is-primary">One framework. Mobile & desktop.</h6>
+            <h1 className="title is-3">{item.name}</h1>
+            <h6 className="subtitle is-primary">{item.description}</h6>
 
           </div>
           <nav className="level is-mobile">
@@ -20,25 +20,25 @@ function GitCard() {
               <div className="level-item has-text-centered">
                 <div>
                   <p className="heading">Size</p>
-                  <p className="subtitle">13K</p>
+                  <p className="subtitle">{item.repoSize}</p>
                 </div>
               </div>
               <div className="level-item has-text-centered">
                 <div>
                   <p className="heading">Forks</p>
-                  <p className="subtitle">16K</p>
+                  <p className="subtitle">{item.forks}</p>
                 </div>
               </div>
               <div className="level-item has-text-centered">
                 <div>
                   <p className="heading">Score</p>
-                  <p className="subtitle">18K</p>
+                  <p className="subtitle">{item.score}</p>
                 </div>
               </div>
             </div>
             <div className="level-right">
               <div className="level-item">
-                <a href="https://github.com/angular/angular" 
+                <a href={item.repoHome} 
                    rel="external"
                    target="_blank"
                    className="button is-primary is-outlined">
