@@ -19,7 +19,7 @@ function GitHubRepoService(){
                 avatar:item.owner.avatar_url,
                 repoSize:item.size,
                 forks:item.forks,
-                score:item.score
+                likes:item.stargazers_count
             };
             repoList.push(temp);
         });

@@ -13,6 +13,34 @@ function RepoHome() {
         setRepoList(result);
     }
 
+    /** TODO: Convert this into a Redux pattern when time permits. */
+    function updateLikes(repoId,change){
+        debugger;
+        let repo = findRepo(repoId);
+        if( repo !== null){
+            let newRepo = { ...repo };
+            newRepo.likes += change;
+            replaceRepo(repo,newRepo);
+        }
+    }
+
+    function findRepo(repoId){
+        let repo = repoList.find((repo) => repo.id === repoId);
+        if(!repo) return null;
+
+        return repo;
+    }
+
+    function replaceRepo(oldValue, newValue){
+         let indx = repoList.findIndex((v) => v.id === oldValue.id);
+         if(indx !== -1){
+             repoList.splice(indx,1);
+             repoList.splice(indx,0,newValue);
+             let newList = [...repoList];
+             setRepoList(newList);
+         }
+    }
+
     return (
         <>
                 <form>
@@ -37,7 +65,7 @@ function RepoHome() {
                        <h1 className="title is-text-danger">No Repositories Found.</h1>
                    ):(
                        repoList.map((item) => (
-                           <RepoInfoCard item={ item } key={item.id}/>
+                           <RepoInfoCard changeLikes={updateLikes} item={ item } key={item.id}/>
                        ))
                    )
                }
